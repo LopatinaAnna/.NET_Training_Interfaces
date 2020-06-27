@@ -48,6 +48,8 @@ namespace Interfaces
 
         public int CompareTo(Deposit other)
         {
+            if (other is null)
+                return 1;
             if (other > this)
                 return -1;
             else if (other < this)

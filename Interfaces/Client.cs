@@ -69,7 +69,7 @@ namespace Interfaces
 
         public void SortDeposits()
         {
-            Array.Sort(deposits, new Comparison<Deposit>((d1, d2) => d2.CompareTo(d1)));
+            Array.Sort(deposits, (d1, d2) => d2.CompareTo(d1));
         }
 
         public int CountPossibleToProlongDeposit()
